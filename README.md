@@ -8,3 +8,5 @@ Notes and resources for learning command line basics and using the command line 
 - Week 4
 - Week 5
 - Week 6
+
+([genome assembly notes](pages/PublicGenomeAssembly.md))
