@@ -86,7 +86,7 @@ args='--isolate -t 10 -m 32'
 
 - run SPAdes:
 ``` console
-for ID in `cat $IDlist`; do echo starting $ID ...; spades.py $args -1 ${indir}/${ID}/${ID}_P1.fastq -2 ${indir}/${ID}/${ID}_P2.fastq -s ${indir}/${ID}/${ID}_U.fastq -o ${outdir}/${ID}; echo $ID complete ...; echo ''; done
+for ID in `cat $IDlist`; do echo starting $ID ...; spades.py $args -1 ${indir}/${ID}_P1.fastq -2 ${indir}/${ID}_P2.fastq -s ${indir}/${ID}_U.fastq -o ${outdir}/${ID}; echo $ID complete ...; echo ''; done
 ```
 
 ### Check Assembly
