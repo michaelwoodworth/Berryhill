@@ -81,7 +81,8 @@ SPAdes is one of the most commonly used de novo assemblers for isolate genomes a
 IDlist=/home/mwoodwo/prj/Berryhill/99.lists/IDlist.txt    # update to just include samples once
 indir=/home/mwoodwo/prj/Berryhill/01.trimmomatic
 outdir=/home/mwoodwo/prj/Berryhill/02.spades
-args='--isolate -t 10 -m 32'
+args='-t 10 -m 32' # newer versions of SPAdes don't allow --isolate flag
+#args='--isolate -t 10 -m 32'
 ```
 
 - run SPAdes:
