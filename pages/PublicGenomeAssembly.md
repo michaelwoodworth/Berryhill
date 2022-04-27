@@ -110,9 +110,9 @@ for ID in `cat $IDlist`; do echo starting $ID ...; quast.py -o ${outdir}/${ID} -
 quast.py -o ${outdir}/${ID} -t 10 --glimmer ${indir}/NRS225/scaffolds.fasta ${indir}/NRS111/scaffolds.fasta ${indir}/NRS242/scaffolds.fasta ${indir}/NRS112/scaffolds.fasta
 ```
 
-### Test SKESA
+### Test SKESA - *OPTIONAL*
 
-See if [SKESA](https://github.com/ncbi/SKESA) produces higher quality assemblies (by N50 statistic).
+There is no need to do this step routinely. Skesa claims to make higher quality assemblies compared to SPAdes but I haven't seen this to really be the case all the time. Here are the steps to construct assemblies with Skesa if you want to see if [SKESA](https://github.com/ncbi/SKESA) will produce higher quality assemblies (by N50 statistic).
 
 - define variables:
 ``` console
